@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebook,
@@ -7,7 +6,7 @@ import {
   FaLinkedin,
   FaPinterest,
 } from "react-icons/fa";
-import logo from "../assets/mc3.png";
+import logo from "../assets/adobe.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,7 +21,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Company Logo"
-              className="w-40 h-10 object-cover mx-auto lg:mx-0"
+              className="w-1/2 object-cover mx-auto lg:mx-0"
             />
 
             <p className="text-sm text-gray-300 dark:text-gray-400">
@@ -89,9 +88,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-yellow-400 dark:hover:text-yellow-300">
+                <a href="#" className="hover:text-yellow-400 dark:hover:text-yellow-300">
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -122,8 +121,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Contact Information */}
           <div>
             <h2 className="text-xl font-semibold mb-4">Have Questions?</h2>
             <ul className="space-y-4 text-sm">

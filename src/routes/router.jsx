@@ -30,7 +30,6 @@ import WorkerRoute from "./WorkerRoute";
 import AdminRoute from "./AdminRoute";
 import ErrorPage from "../pages/ErrorPage";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
 
 
 
@@ -64,10 +63,6 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About></About>
     },
-    {
-      path: '/contact',
-      element: <Contact></Contact>
-  },
       {
         path:'/profile',
         element: <PrivateRoute> <UserProfile></UserProfile></PrivateRoute>

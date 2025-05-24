@@ -10,13 +10,13 @@ import qoute12 from "../assets/closeq1.png";
 const testimonials = [
     {
         id: 1,
-        name: 'Santanu',
+        name: 'Mahin',
         comment: 'This platform is amazing! I have been able to earn a significant amount of money by completing simple tasks.',
         image: 'https://i.ibb.co/Qpgk5zP/handsome-young-business-man-holding-document-folder-220507-700.jpg',
     },
     {
         id: 2,
-        name: 'Purba',
+        name: 'Viola',
         comment: 'I love how easy it is to use this platform. The tasks are straightforward, and the payouts are fair.',
         image: 'https://i.ibb.co/1Zzf8dv/360-F-617571490-Lagtv4fr-Ko0-T4zo-El-Zsld-Duzzn-AATG10.jpg',
     },

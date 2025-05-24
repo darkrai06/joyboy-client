@@ -1,11 +1,9 @@
-
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import logo from "../assets/mc3.png";
-import { FaMoon, FaSun } from "react-icons/fa";
+import logo from "../assets/adobe.png";
 import { useContext, useState } from "react";
 
-const Navbar = ({ theme, toggleTheme }) => {
+const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -15,16 +13,16 @@ const Navbar = ({ theme, toggleTheme }) => {
     navigate("/");
   };
 
-  const activeStyle = "bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded";
+  const activeStyle = "bg-gradient-to-r from-sky-600 to-cyan-500 text-white px-4 py-2 rounded";
 
   return (
-    <nav className="inset-0 z-10 py-2 shadow-lg  text-white bg-gradient-to-l dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 dark:text-white">
+    <nav className="inset-0 z-10 py-2 shadow-lg text-white bg-gradient-to-l dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 dark:text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <NavLink to="/" className="text-2xl font-bold">
-              <img src={logo} className="w-44 h-24 object-cover" alt="Logo" />
+              <img src={logo} className="w-1/4 object-cover" alt="Logo" />
             </NavLink>
           </div>
 
@@ -32,60 +30,15 @@ const Navbar = ({ theme, toggleTheme }) => {
           <div className="hidden md:flex items-center space-x-6 font-bold">
             {!user ? (
               <>
-                <NavLink
-                  to="/login"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeStyle
-                      : ""
-                  }
-                >
-                  Login
-                </NavLink>
-                <NavLink
-                  to="/register"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeStyle
-                      : ""
-                  }
-                >
-                  Register
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeStyle
-                      : ""
-                  }
-                >
-                 About
-                </NavLink>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeStyle
-                      : ""
-                  }
-                >
-                 Contact
-                </NavLink>
+                <NavLink to="/login" className={({ isActive }) => isActive ? activeStyle : ""}>Login</NavLink>
+                <NavLink to="/register" className={({ isActive }) => isActive ? activeStyle : ""}>Register</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? activeStyle : ""}>About</NavLink>
               </>
             ) : (
               <>
-                <NavLink
-                  to="/dashboard"
-                  className={({ isActive }) =>
-                    isActive ? activeStyle : "hover:text-gray-400"
-                  }
-                >
-                  Dashboard
-                </NavLink>
-                <span className="hover:text-gray-400">
-                  Coins: <span className="text-orange-400">{user?.coins || 0}</span>
-                </span>
+                <NavLink to="/dashboard" className={({ isActive }) => isActive ? activeStyle : "hover:text-gray-400"}>Dashboard</NavLink>
+                <span className="hover:text-gray-400">Coins: <span className="text-orange-400">{user?.coins || 0}</span></span>
+                
                 {/* Profile and Logout */}
                 <div className="dropdown dropdown-end ml-4">
                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -97,15 +50,14 @@ const Navbar = ({ theme, toggleTheme }) => {
                       />
                     </div>
                   </label>
-                  <ul
-                    tabIndex={0}
-                    className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 dark:bg-gray-800 rounded-box w-52"
-                  >
+                  <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 dark:bg-gray-800 rounded-box w-52">
                     <li>
                       <NavLink
                         to="profile"
                         className={({ isActive }) =>
-                          isActive ? activeStyle : "text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                          isActive
+                            ? activeStyle
+                            : "text-black dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                         }
                       >
                         Profile
@@ -132,14 +84,6 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               Join as Developer
             </a>
-
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-300"
-            >
-              {theme === "light" ? <FaMoon className="text-gray-800" /> : <FaSun className="text-yellow-400" />}
-            </button>
           </div>
 
           {/* Hamburger Menu */}
@@ -153,19 +97,9 @@ const Navbar = ({ theme, toggleTheme }) => {
                 stroke="currentColor"
               >
                 {isMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 )}
               </svg>
             </button>
@@ -182,9 +116,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <NavLink
                   to="/login"
                   className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
+                    isActive ? `${activeStyle} block` : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
                   }
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -193,9 +125,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <NavLink
                   to="/register"
                   className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
+                    isActive ? `${activeStyle} block` : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
                   }
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -204,50 +134,31 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
+                    isActive ? `${activeStyle} block` : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
                   }
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
                 </NavLink>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
-                  }
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                 Contact
-                </NavLink>
-                
-               
               </>
             ) : (
               <>
                 <NavLink
                   to="/dashboard"
                   className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
+                    isActive ? `${activeStyle} block` : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
                   }
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Dashboard
                 </NavLink>
                 <span className="block px-3 py-2 rounded-md text-base">
-                  Coins: <span className="text-orange-500 font-semibold">{user?.coins || 0}</span> 
+                  Coins: <span className="text-orange-500 font-semibold">{user?.coins || 0}</span>
                 </span>
                 <NavLink
                   to="/profile"
                   className={({ isActive }) =>
-                    isActive
-                      ? `${activeStyle} block`
-                      : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
+                    isActive ? `${activeStyle} block` : "block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
                   }
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -272,14 +183,6 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               Join as Developer
             </a>
-
-            {/* Theme Toggle for Mobile */}
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-300"
-            >
-              {theme === "light" ? <FaMoon className="text-gray-800" /> : <FaSun className="text-yellow-400" />}
-            </button>
           </div>
         </div>
       )}
