@@ -1,109 +1,101 @@
+<<<<<<< HEAD
+=======
+# Micro Tasking and Earning Platform  
 
-# Micro-Tasking Platform
+**Live Project Link**: https://micro-service-ef6a7.web.app/  
 
-A platform where users can complete microtasks to earn rewards or post tasks to get things done. The platform supports various roles such as Workers, Buyers, and Admins with role-based dashboards and secure payments.
+---
 
-## Live Site URL
+## 📋 Overview  
+The **Micro Tasking and Earning Platform** is a full-stack MERN application that allows users to earn money by completing small tasks. The platform features role-based access for Workers, Buyers, and Admins to streamline task creation, management, and earnings. It ensures a seamless experience with responsive design, secure authentication, and role-based authorization.  
 
-[https://b10-a12.web.app/](https://b10-a12.web.app/)
+---
 
-## Admin Credentials
+## https://i.ibb.co.com/5WdhMdC8/micro-tasking1.jpg
+  
 
-* **UserEmail:** Santanubkph@bd.com
-* **Password:** Ph1234@
+---
 
-## Features
+## 💻 Technologies Used  
+### Frontend:  
+- React.js  
+- Tailwind CSS  
+- DaisyUI  
+- React Router  
+- Axios  
 
-* **User Authentication:**
-    * Secure registration and login with email/password.
-    * Google authentication for quick and easy signup/login.
-    * Input validation to ensure data integrity.
-* **Role-Based Access:**
-    * Separate dashboards for Workers, Buyers, and Admins with distinct functionalities.
-    * Workers complete tasks, Buyers create tasks, and Admins manage the platform.
-* **Task Management:** 
-    * Buyers can create tasks with detailed descriptions, requirements, and rewards.
-    * Buyers can manage their posted tasks, track progress, and review submissions.
-* **Submission & Review:**
-    * Workers can browse available tasks and submit completed work for review.
-    * Buyers can review submissions, approve or reject them, and provide feedback.
-* **Secure Payments:**
-    * Integrated Stripe payment gateway for secure coin purchases by Buyers.
-    * Buyers can purchase coins to fund their tasks and pay Workers.
-* **Withdrawals:**
-    * Workers can withdraw their earned coins through various payment methods (e.g., Bkash, Rocket, Nagad).
-    * Admin approves withdrawal requests and manages payment processing.
-* **Notifications:**
-    * Real-time notifications for task updates, submission status, payments, and withdrawals.
-    * Users can view their notifications in a dropdown menu.
-* **Responsive Design:**
-    * The website adapts seamlessly to various screen sizes (desktop, tablet, mobile) for optimal user experience.
-* **User-Friendly Interface:**
-    * Intuitive design and clear navigation for easy task management and interaction.
-* **Admin Panel:**
-    * Comprehensive dashboard for Admins to manage users, tasks, submissions, and withdrawals.
-    * Admins can update user roles, delete users, and manage task status.
+### Backend:  
+- Node.js  
+- Express.js  
+- MongoDB  
+- Firebase Authentication  
+- TanStack Query  
 
-## Technologies Used
+### Tools & Integrations:  
+- ImageBB API for image uploads  
+- Stripe API for payments  
 
-* **Frontend:**
-    * React: JavaScript library for building user interfaces.
-    * Tailwind CSS: Utility-first CSS framework for rapid UI development.
-    * DaisyUI: Component library built on top of Tailwind CSS.
-    * Headless UI: Unstyled, fully accessible UI components.
-    * React Hook Form: Library for form management and validation.
-    * React Query: Data fetching and state management library.
-    * Axios: Promise-based HTTP client for API requests.
-    * Lottie-React: Animation library for adding interactive animations.
-    * React Router DOM: For routing and navigation.
-    * React Icons: For adding icons to the application.
-* **Backend:**
-    * Node.js: JavaScript runtime environment.
-    * Express.js: Minimalist web framework for Node.js.
-    * MongoDB: NoSQL database for data storage.
-    * JWT (JSON Web Token): For secure authentication and authorization.
-    * Stripe: Payment processing platform.
+---
 
-## NPM Packages Used
+## 🔑 Core Features  
 
-*  `@headlessui/react`: For accessible UI components.
-*  `@stripe/react-stripe-js`: For Stripe integration in React.
-*  `@stripe/stripe-js`: For Stripe JavaScript integration.
-*  `@tanstack/react-query`: For data fetching and state management.
-*  `animate.css`: For adding pre-built animations.
-*  `axios`: For making HTTP requests.
-*  `firebase`: For Firebase authentication.
-*  `localforage`: For offline data storage.
-*  `lottie-react`: For Lottie animations in React.
-*  `match-sorter`: For matching and sorting data efficiently.
-*  `motion`: For adding animations to components.
-*  `react-card-flip`: For flip card animations.
-*  `react-countup`: For animated counters.
-*  `react-dom`: For React DOM rendering.
-*  `react-helmet`: For managing the document head.
-*  `react-helmet-async`: For asynchronous management of the document head.
-*  `react-hook-form`: For form management and validation.
-*  `react-hot-toast`: For toast notifications.
-*  `react-icons`: For incorporating icons in the app.
-*  `react-responsive-carousel`: For creating responsive carousels.
-*  `react-router-dom`: For routing and navigation.
-*  `sort-by`: For sorting arrays efficiently.
-*  `swiper`: For creating responsive touch sliders.
+### General Features:  
+- Role-based functionality for Workers, Buyers, and Admins.  
+- Secure user authentication (Email/Password and Google Sign-In).  
+- Token-based authorization with role-specific middlewares.  
+- Fully responsive design for mobile, tablet, and desktop.  
 
-## Future Improvements
+### Worker Features:  
+- View and complete tasks with detailed submission.  
+- Track submissions, earnings, and withdrawal history.  
+- Withdraw coins for cash (20 coins = $1).  
+- Receive notifications for task approvals and withdrawals.  
 
-* Service Categories: Implement service categories for better organization and filtering.
-* Multi-language Support: Add multilingual features to make the platform more inclusive.
-* Analytics Dashboard: Enhance the admin panel with advanced analytics for service and user performance.
-* SEO Optimization: Improve SEO for better discoverability on search engines.
+### Buyer Features:  
+- Add new tasks with detailed requirements.  
+- Manage and review worker submissions.  
+- Approve/reject tasks and adjust required workers.  
+- Purchase coins using Stripe payment integration.  
 
-## Contributing
+### Admin Features:  
+- Manage users, roles, tasks, and withdrawal requests.  
+- Approve or reject withdrawal requests.  
+- Monitor overall platform activity (users, tasks, and coins).  
 
-Contributions are welcome! Please feel free to open issues or submit pull requests.
+---
 
-## Acknowledgments
+## 📦 Dependencies  
 
-* **React:** React is an open-source JavaScript library maintained by Facebook and the community.
-* **Firebase:** Firebase is a platform developed by Google for creating mobile and web applications.
-* **MongoDB:** MongoDB is a NoSQL database that provides high availability and scalability.
-* **Stripe:** Stripe is a powerful and flexible payments platform for online transactions.
+### Frontend Dependencies:  
+- `react-router-dom`: For client-side routing.  
+- `axios`: For making HTTP requests.  
+- `react-responsive-carousel`: For sliders on the homepage.  
+- `daisyui` and `tailwindcss`: For styling.  
+- `firebase`: For authentication.  
+
+### Backend Dependencies:  
+- `express`: For creating RESTful APIs.  
+- `mongoose`: For MongoDB object modeling.  
+- `jsonwebtoken`: For token-based authentication.  
+- `cors`: For handling cross-origin requests.  
+
+---
+
+## 🚀 How to Run Locally  
+
+### Prerequisites:  
+- Node.js and npm installed.  
+- MongoDB database set up.  
+
+### Steps:  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/tushar54/microTask-client-side/edit/main
+   cd your-repository
+2. For client
+   -cd client
+   -npm install
+
+4. Set up environment variables
+   
+>>>>>>> 5506c20f66f04c81c889cdac4786d2b8da718176
