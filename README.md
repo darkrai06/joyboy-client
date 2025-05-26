@@ -1,6 +1,3 @@
-<div align="center">
-  <img height="200" src="https://raw.githubusercontent.com/SantanuBanik-Phy/micro-task-client/refs/heads/main/src/assets/micro-task-github.png"  />
-</div>
 
 # Micro-Tasking Platform
 
@@ -92,19 +89,6 @@ A platform where users can complete microtasks to earn rewards or post tasks to 
 *  `react-router-dom`: For routing and navigation.
 *  `sort-by`: For sorting arrays efficiently.
 *  `swiper`: For creating responsive touch sliders.
-
-## Installation and Setup
-
-1. Clone the repository: `git clone https://github.com/your-username/micro-tasking-platform.git`
-2. Install dependencies:
-    * Client-side: `cd micro-tasking-client && npm install`
-    * Server-side: `cd micro-tasking-server && npm install`
-3. Set up environment variables: 
-    * Create `.env` files in both client and server directories.
-    * Add your Firebase config, MongoDB URI, Stripe keys, and other sensitive information.
-4. Run the application:
-    * Start the development server (client-side): `npm start`
-    * Start the server (server-side): `node index.js`
 
 ## Future Improvements
 

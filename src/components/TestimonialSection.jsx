@@ -1,11 +1,9 @@
-import React from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
-import qoute1 from "../assets/openq.png";
-import qoute12 from "../assets/closeq1.png";
 
 const testimonials = [
     {
@@ -54,19 +52,9 @@ const TestimonialSection = () => {
     />
 </div>
                             <div className="w-full lg:w-1/2 p-8 md:p-10 relative">
-                                <img
-                                    src={qoute1}
-                                    alt="Open Quote"
-                                    className="absolute -top-8 left-4 w-16 h-16 opacity-20"
-                                />
                                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 relative">
                                     {testimonial.comment}
                                 </p>
-                                <img
-                                    src={qoute12}
-                                    alt="Close Quote"
-                                    className="absolute bottom-4 right-4 w-16 h-16 opacity-20"
-                                />
                                 <h3 className="text-3xl font-extrabold text-gray-800 dark:text-gray-100 mt-6 relative">
                                     {testimonial.name}
                                 </h3>

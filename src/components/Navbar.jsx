@@ -77,7 +77,7 @@ const Navbar = () => {
             )}
             
             <a
-              href="https://github.com/SantanuBanik-Phy/micro-task-client/commits/main"
+              href="https://github.com/darkrai06/joyboy-client"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400"
@@ -176,7 +176,7 @@ const Navbar = () => {
               </>
             )}
             <a
-              href="https://github.com/SantanuBanik-Phy/micro-task-client/commits/main"
+              href="https://github.com/darkrai06/joyboy-client"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-2 rounded-md text-base hover:bg-gray-600 dark:hover:bg-gray-700"
