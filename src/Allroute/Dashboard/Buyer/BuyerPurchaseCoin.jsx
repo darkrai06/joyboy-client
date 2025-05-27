@@ -26,7 +26,7 @@ const BuyerPurchaseCoin = () => {
               onClick={() => setSelectedPackage(pkg)}
             >
               <p className="font-semibold text-xl">{pkg.coins} Coins</p>
-              <p className="text-lg text-gray-700">${pkg.price}</p>
+              <p className="text-lg text-white">${pkg.price}</p>
             </div>
           ))}
         </div>

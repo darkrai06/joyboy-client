@@ -7,7 +7,7 @@ const About = () => {
       <section className="mb-8">
         <h1 className="text-3xl font-bold mb-4">About Our Platform</h1>
         <p className="text-white">
-          Welcome to [Your Platform Name], where buyers and skilled workers connect to get tasks done efficiently and securely. Our mission is to simplify the process of task delegation and completion, making it easy for you to focus on what matters most.
+          Welcome to <span className='font-extrabold text-rose-400'>JOYBOY</span>, where buyers and skilled workers connect to get tasks done efficiently and securely. Our mission is to simplify the process of task delegation and completion, making it easy for you to focus on what matters most.
         </p>
       </section>
 
