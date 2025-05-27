@@ -54,7 +54,7 @@ const Registration = () => {
         photoURL: imgurl,
       });
 
-      await axios.post("https://micro-service-earning-platfrom-server-side.vercel.app/user", {
+      await axios.post("https://joyboy-server.onrender.com/user", {
         name,
         email,
         imgurl,
@@ -77,7 +77,7 @@ const Registration = () => {
     try {
       const result = await googleSignup();
       const user = result.user;
-      await axios.post("https://micro-service-earning-platfrom-server-side.vercel.app/user", {
+      await axios.post("https://joyboy-server.onrender.com/user", {
         name: user.displayName,
         email: user.email,
         imgurl: user.photoURL,

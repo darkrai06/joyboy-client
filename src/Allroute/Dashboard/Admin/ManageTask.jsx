@@ -39,7 +39,7 @@ const ManageTask = () => {
             <div className="overflow-x-auto md:overflow-auto">
                 {/* Table for larger screens */}
                 <table className="hidden md:table w-full border border-gray-200 shadow-lg">
-                    <thead className="bg-gray-200 text-gray-700 text-sm">
+                    <thead className="bg-gray-200 text-white text-sm">
                         <tr>
                             <th className="p-4 text-left">Task ID</th>
                             <th className="p-4 text-left">User Name</th>

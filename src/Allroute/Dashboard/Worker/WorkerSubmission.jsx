@@ -41,7 +41,7 @@ const WorkerSubmission = () => {
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-semibold text-gray-800">Submission List</h2>
+        <h2 className="text-3xl font-semibold text-white">Submission List</h2>
       </div>
       <div className="overflow-x-auto  shadow-lg rounded-lg">
         <table className="table-auto w-full text-left border-collapse">
@@ -90,7 +90,7 @@ const WorkerSubmission = () => {
           <button
             key={index}
             onClick={() => paginate(index + 1)}
-            className={`px-4 py-2 mx-2 ${currentPage === index + 1 ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'} rounded-md`}
+            className={`px-4 py-2 mx-2 ${currentPage === index + 1 ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-white'} rounded-md`}
           >
             {index + 1}
           </button>

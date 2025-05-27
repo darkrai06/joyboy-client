@@ -112,7 +112,7 @@ export const router = createBrowserRouter([
           {
             path: 'taskDetails/:id',
             element: <WorkerPrivate><Taskdetails></Taskdetails></WorkerPrivate>,
-            loader: ({ params }) => fetch(`https://micro-service-earning-platfrom-server-side.vercel.app/oneTaskDetails${params.id}`),
+            loader: ({ params }) => fetch(`https://joyboy-server.onrender.com/oneTaskDetails${params.id}`),
 
           }
 

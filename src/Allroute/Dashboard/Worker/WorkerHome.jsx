@@ -41,15 +41,15 @@ const WorkerHome = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="card p-6  shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-bold text-gray-800">Total Tasks</h3>
+              <h3 className="text-lg font-bold text-white">Total Tasks</h3>
               <p className="text-xl font-semibold text-indigo-600">{workerStats?.totalTaskCount}</p>
             </div>
             <div className="card p-6  shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-bold text-gray-800">Pending Work</h3>
+              <h3 className="text-lg font-bold text-white">Pending Work</h3>
               <p className="text-xl font-semibold text-yellow-600">{workerStats?.pendingTask}</p>
             </div>
             <div className="card p-6  shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-bold text-gray-800">Total Payment Paid</h3>
+              <h3 className="text-lg font-bold text-white">Total Payment Paid</h3>
               <p className="text-xl font-semibold text-green-600">coin: {workerStats?.totalPaymentPaid}</p>
             </div>
           </div>

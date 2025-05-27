@@ -17,10 +17,10 @@ const WorkerTaskList = () => {
     return (
         <div className="px-4 py-8 max-w-7xl mx-auto">
             <div className="text-center mb-6">
-                <h2 className="text-3xl font-semibold text-gray-800">Available Tasks</h2>
+                <h2 className="text-3xl font-semibold text-amber-500">Available Tasks</h2>
                 {isLoading && <p className="text-gray-500">Loading tasks...</p>}
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-amber-400">
                 {alltask?.map((data, index) => (
                     <TaskCard key={index} data={data} />
                 ))}

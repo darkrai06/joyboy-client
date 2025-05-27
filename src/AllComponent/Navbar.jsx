@@ -14,7 +14,7 @@ const Navbar = () => {
         const fetchUser = async () => {
             try {
                 const res = await axios.get(
-                    `https://micro-service-earning-platfrom-server-side.vercel.app/oneUser${currentUser?.email}`
+                    `https://joyboy-server.onrender.com/oneUser${currentUser?.email}`
                 );
                 setUserdata(res.data);
             } catch (error) {

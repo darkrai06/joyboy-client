@@ -15,17 +15,17 @@ const TaskCard = ({ data }) => {
         <div className="p-4">
             <div className="border rounded-lg shadow-lg  transition-all duration-300 hover:shadow-xl hover:scale-105">
                 <div className="p-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-3">{taskTitle}</h2>
-                    <p className="text-sm text-gray-600 mb-2">
+                    <h2 className="text-xl font-semibold text-white mb-3">{taskTitle}</h2>
+                    <p className="text-sm text-amber-400 mb-2">
                         <span className="font-medium">Buyer Name:</span> {user}
                     </p>
-                    <p className="text-sm text-gray-600 mb-2">
+                    <p className="text-sm text-amber-400 mb-2">
                         <span className="font-medium">Completion Date:</span> {completionDate}
                     </p>
-                    <p className="text-sm text-gray-600 mb-2">
+                    <p className="text-sm text-amber-400 mb-2">
                         <span className="font-medium">Payable Amount:</span> ${payableAmount}
                     </p>
-                    <p className="text-sm text-gray-600 mb-4">
+                    <p className="text-sm text-amber-400 mb-4">
                         <span className="font-medium">Required Workers:</span> {requiredWorkers}
                     </p>
 

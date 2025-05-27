@@ -42,7 +42,7 @@ const AuthContext = ({ children }) => {
             setCurrentUser(user);
             if (user) {
                 const userinfo = { email: user.email };
-                axios.post('https://micro-service-earning-platfrom-server-side.vercel.app/jwt', userinfo)
+                axios.post('https://joyboy-server.onrender.com/jwt', userinfo)
                     .then(res => {
                        
                         if (res.data.token) {

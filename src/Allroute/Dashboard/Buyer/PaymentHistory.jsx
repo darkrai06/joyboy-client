@@ -32,9 +32,9 @@ const PaymentHistory = () => {
                     {
                         history?.map((data) => (
                             <tr key={data.paymentIntentId} className="border-t border-gray-200 hover:bg-gray-50 transition duration-200">
-                                <td className="py-3 px-4 text-sm text-gray-800">{data.paymentIntentId}</td>
-                                <td className="py-3 px-4 text-sm text-gray-800">{data.coins}</td>
-                                <td className="py-3 px-4 text-sm text-gray-800">{data.cost}</td>
+                                <td className="py-3 px-4 text-sm text-white">{data.paymentIntentId}</td>
+                                <td className="py-3 px-4 text-sm text-white">{data.coins}</td>
+                                <td className="py-3 px-4 text-sm text-white">{data.cost}</td>
                             </tr>
                         ))
                     }

@@ -70,7 +70,7 @@ const Withdrawals = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6  rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">Withdrawals</h2>
+      <h2 className="text-2xl font-semibold text-white text-center mb-6">Withdrawals</h2>
 
       <div className="mb-4">
         <p className="text-lg">User Total Coins: <span className="font-semibold">{userdata.coin}</span></p>
