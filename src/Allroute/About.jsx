@@ -44,7 +44,7 @@ const About = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">Join Our Community</h2>
         <p className="text-white">
-          Whether you're looking to get your tasks done or seeking flexible work opportunities, [Your Platform Name] is the place to be. 
+          Whether you're looking to get your tasks done or seeking flexible work opportunities, JOYBOY is the place to be. 
           <a href="/register" className="text-blue-600 hover:underline ml-2">Sign up today</a> and experience a new way to connect and collaborate.
         </p>
       </section>
