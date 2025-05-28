@@ -1,8 +1,7 @@
 
-=======
 # JOYBOY
 
-**Live Project Link**: 
+**Live Project Link**: https://joyboy-task.netlify.app/
 
 ---
 
@@ -92,3 +91,8 @@ The **JOYBOY** is a full-stack MERN application that allows users to earn money 
    -npm install
 
 4. Set up environment variables
+
+## Admin Login
+
+- Admin Username : a@b.com
+- Admin Password : A@b123
