@@ -32,7 +32,6 @@ const AdminHome = () => {
     },
   });
 
-  // Mutation to handle payment success
   const paymentSuccessMutation = useMutation({
     mutationFn: async ({ requestId, withdrawalAmount, workerEmail }) => {
       await axiosSecure.patch(`/withdrawRequests${requestId}`, {
@@ -69,7 +68,6 @@ const AdminHome = () => {
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-      {/* Stats Section */}
       <div className="mb-8">
         {isInfoLoading ? (
           <p className="text-center text-gray-600">Loading stats...</p>
@@ -99,7 +97,6 @@ const AdminHome = () => {
         )}
       </div>
 
-      {/* Withdrawal Requests Table */}
       <div>
         <h3 className="text-2xl font-bold text-gray-800 mb-4">
           Pending Withdrawal Requests
