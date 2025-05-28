@@ -6,7 +6,6 @@ import { CiCircleRemove } from "react-icons/ci";
 import useAxiosSecure from '../../../AllHooks/useAxiosSecure';
 import Swal from 'sweetalert2';
 
-// Card Component for Stats
 const StatsCard = ({ title, value }) => (
   <div className="card p-4 border border-gray-200 rounded-md shadow-sm">
     <h3 className="text-lg font-semibold">{title}</h3>
@@ -19,7 +18,6 @@ const BuyerHome = () => {
   const [modalData, setModalData] = useState(null);
   const axiosSecure = useAxiosSecure();
 
-  // Fetch buyer stats
   const { data: buyerStats, isLoading: statsLoading, refetch: refetchForStats } = useQuery({
     queryKey: ['buyerStats', currentUser?.email],
     queryFn: async () => {
@@ -29,7 +27,6 @@ const BuyerHome = () => {
     enabled: !!currentUser?.email,
   });
 
-  // Fetch tasks
   const { data: userdata, isLoading: tasksLoading, refetch } = useQuery({
     queryKey: ['buyerpendingtask', currentUser?.email],
     queryFn: async () => {
