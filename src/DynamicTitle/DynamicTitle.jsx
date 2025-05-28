@@ -11,6 +11,7 @@ const DynamicTitle = () => {
       "/register": "Joyboy | Registration",
       "/aboutUs" : "Joyboy | About US",
       "/Dashboard": "Joyboy | Dashboard",
+      "/Profile": "Joyboy | Profile",
       "/Dashboard/AdminHome": "AdminHome",
       "/Dashboard/manageuser": "AdminManageUser",
       "/Dashboard/managetask": "AdminManageTask",
