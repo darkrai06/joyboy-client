@@ -7,7 +7,7 @@ import pic5 from '../assets/PNG.png'
 import pic6 from '../assets/One-Piece-Logo-PNG-Images.png'
 const About = () => {
   return (
-    <div className="container mx-auto p-10 bg-slate-700">
+    <div className="container mx-auto mt-8 p-10 bg-slate-700">
       {/* Introduction */}
       <section className="mb-8">
         <h1 className="text-3xl font-bold mb-4">About Our Platform</h1>
@@ -60,8 +60,7 @@ const About = () => {
           <img src={pic2} className='w-1/12' alt="" />
           <img src={pic3} className='w-1/12' alt="" />
           <img src={pic4} className='w-1/12' alt="" />
-          <img src={pic5} className='w-1/12' alt="" />
-          <img src={pic6} className='w-1/6' alt="" />
+          <img src={pic6} className='w-1/4' alt="" />
         </div>
       </section>
     </div>
