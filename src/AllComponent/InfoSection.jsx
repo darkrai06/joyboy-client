@@ -16,7 +16,7 @@ const InfoSection = () => {
                     <div className="w-12 h-1 mb-4"></div>
                     <p className=" text-base md:text-lg mb-6">
                         Take surveys, download apps, play games, or follow social media
-                        apps, Picoworkers offers a diverse range of options to boost your
+                        apps, JOYBOY offers a diverse range of options to boost your
                         income. Whether you are a student, freelancer, or stay-at-home
                         parent our platform connects you with employers quickly and safely
                         with a seamless payment experience. Register now!
@@ -37,10 +37,10 @@ const InfoSection = () => {
                     </h1>
                     <div className="w-12 h-1 bg-red-600 mb-4"></div>
                     <p className="text-base md:text-lg mb-6">
-                        Whether you are a company or an individual crowdsource talent for
+                        Whether you are a company or an individual crowd source talent for
                         your micro jobs and start getting it done in minutes. App testing,
                         surveys, promoting social media, or getting sign-ups, get it done
-                        with Picoworkers – One platform for all your needs, sign-up now and
+                        with JOYBOY – One platform for all your needs, sign-up now and
                         start creating a job!! 
                     </p>
                     {

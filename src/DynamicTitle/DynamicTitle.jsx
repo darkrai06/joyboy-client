@@ -9,6 +9,7 @@ const DynamicTitle = () => {
       "/login": "Login Page",
       "/": "Home",
       "/register": "Registration",
+      "/aboutUs" : "About US",
       "/Dashboard": "Dashboard",
       "/Dashboard/AdminHome": "AdminHome",
       "/Dashboard/manageuser": "AdminManageUser",

@@ -4,7 +4,7 @@ import logo from "../assets/adobe.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-gradient-to-r from-blue-200 to-blue-300 text-black p-10">
+            <footer className="footer bg-gradient-to-r from-cyan-700 to-blue-900 font-extrabold text-black p-10">
                 <aside>
                 <img src={logo} className='w-1/4' alt="" />
                     <p>
@@ -14,7 +14,7 @@ const Footer = () => {
                     </p>
                 </aside>
                 <nav>
-                    <h6 className="footer-title">Social</h6>
+                    <h6 className="footer-title text-white">Social</h6>
                     <div className="grid grid-flow-col gap-4">
                         <a>
                             <svg

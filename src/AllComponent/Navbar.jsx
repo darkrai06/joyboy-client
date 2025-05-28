@@ -50,7 +50,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="https://github.com/darkrai06/joyboy-client"
+                to="https://github.com/darkrai06/joyboy-client" target='_blank'
                 className="border-2 border-blue-600 px-1 py-3 flex justify-center items-center  rounded-md"
             >
                 Join As Developer

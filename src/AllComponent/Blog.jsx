@@ -10,7 +10,7 @@ const blogs = [
     description:
       "Micro-tasks provide the opportunity to earn money by completing small tasks...",
     date: "25 May 2024",
-    image: img, // Replace with actual image URL
+    image: img, 
   },
   {
     id: 2,
@@ -18,15 +18,15 @@ const blogs = [
     description:
       "Micro Jobs allow you to become an independent contractor by completing tasks...",
     date: "25 May 2024",
-    image: img1, // Replace with actual image URL
+    image: img1, 
   },
   {
     id: 3,
     title: "Get Paid to Take Surveys",
     description:
-      "Using your opinions and turning them into an additional income stream...",
+      "Using your opinions and turning them into an additional income stream will create a new...",
     date: "27 May 2024",
-    image: img2, // Replace with actual image URL
+    image: img2, 
   },
 ];
 
@@ -37,7 +37,7 @@ const BlogSection = () => {
         Latest Blogs
       </h2>
       <p className="text-center  mb-8">
-        Read Latest Blogs from Picoworkers
+        Read Latest Blogs
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {blogs.map((blog) => (
@@ -56,8 +56,8 @@ const BlogSection = () => {
                 {blog.title}
               </h3>
               <p className=" text-sm mb-4">{blog.description}</p>
-              <a
-                href="https://www.youtube.com/"
+              <a 
+                href="https://jumptask.io/blog/guide-to-microtasking/" target="_blank"
                 className="text-red-500 font-semibold text-sm hover:underline"
               >
                 Read More →
