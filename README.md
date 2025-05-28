@@ -42,7 +42,7 @@ The **JOYBOY** is a full-stack MERN application that allows users to earn money 
 ### Worker Features:  
 - View and complete tasks with detailed submission.  
 - Track submissions, earnings, and withdrawal history.  
-- Withdraw coins for cash (20 coins = $1).  
+- Withdraw coins for cash 
 - Receive notifications for task approvals and withdrawals.  
 
 ### Buyer Features:  

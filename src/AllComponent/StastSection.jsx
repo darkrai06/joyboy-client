@@ -6,20 +6,20 @@ const StatsSection = () => {
     {
       id: 1,
       icon: <Briefcase size={40} color="#4B76F4" />,
-      value: "50K+",
+      value: "90K+",
       label: "TOTAL JOB POSTS",
     },
     {
       id: 2,
       icon: <CheckSquare size={40} color="#4B76F4" />,
-      value: "26K+",
+      value: "126K+",
       label: "COMPLETED PROJECTS",
     },
     {
       id: 3,
       icon: <User size={40} color="#4B76F4" />,
-      value: "94K+",
-      label: "REGISTERED FREELANCERS",
+      value: "20K+",
+      label: "REGISTERED WORKERS",
     },
   ];
 

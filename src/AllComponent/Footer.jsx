@@ -10,7 +10,7 @@ const Footer = () => {
                     <p>
                         Joyboy limited
                         <br />
-                        Providing reliable tech since 1992
+                        Providing reliable service since 2002
                     </p>
                 </aside>
                 <nav>
