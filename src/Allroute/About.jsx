@@ -1,8 +1,13 @@
 import React from 'react';
-
+import pic from '../assets/art.png'
+import pic2 from '../assets/unnamed.png'
+import pic3 from '../assets/bd.png'
+import pic4 from '../assets/rcb.png'
+import pic5 from '../assets/PNG.png'
+import pic6 from '../assets/One-Piece-Logo-PNG-Images.png'
 const About = () => {
   return (
-    <div className="container mx-auto p-10">
+    <div className="container mx-auto p-10 bg-slate-700">
       {/* Introduction */}
       <section className="mb-8">
         <h1 className="text-3xl font-bold mb-4">About Our Platform</h1>
@@ -47,6 +52,17 @@ const About = () => {
           Whether you're looking to get your tasks done or seeking flexible work opportunities, JOYBOY is the place to be. 
           <a href="/register" className="text-blue-600 hover:underline ml-2">Sign up today</a> and experience a new way to connect and collaborate.
         </p>
+      </section>
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-3">Our Partners</h2>
+        <div className='gap-24 flex'>
+          <img src={pic} className='w-1/12' alt="" />
+          <img src={pic2} className='w-1/12' alt="" />
+          <img src={pic3} className='w-1/12' alt="" />
+          <img src={pic4} className='w-1/12' alt="" />
+          <img src={pic5} className='w-1/12' alt="" />
+          <img src={pic6} className='w-1/6' alt="" />
+        </div>
       </section>
     </div>
   );
