@@ -6,11 +6,11 @@ const DynamicTitle = () => {
 
   useEffect(() => {
     const routeTitles = {
-      "/login": "Login Page",
-      "/": "Home",
-      "/register": "Registration",
-      "/aboutUs" : "About US",
-      "/Dashboard": "Dashboard",
+      "/login": "Joyboy | Login",
+      "/": "Joyboy | Home",
+      "/register": "Joyboy | Registration",
+      "/aboutUs" : "Joyboy | About US",
+      "/Dashboard": "Joyboy | Dashboard",
       "/Dashboard/AdminHome": "AdminHome",
       "/Dashboard/manageuser": "AdminManageUser",
       "/Dashboard/managetask": "AdminManageTask",
