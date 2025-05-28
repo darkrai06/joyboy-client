@@ -33,9 +33,10 @@ const Profile = () => {
             <h2 className="text-xl font-semibold">Coins</h2>
             <p>{userdata.coin}</p>
           </div>
-          {/* Add any additional information if needed */}
         </div>
       </div>
+      <div className='my-6 border border-white'></div>
+      <p className='font-extrabold text-3xl text-white text-center'>Welcome {userdata.name} !</p>
     </div>
   );
 };
