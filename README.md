@@ -1,18 +1,13 @@
-<<<<<<< HEAD
-=======
-# Micro Tasking and Earning Platform  
 
-**Live Project Link**: https://micro-service-ef6a7.web.app/  
+=======
+# JOYBOY
+
+**Live Project Link**: 
 
 ---
 
 ## 📋 Overview  
-The **Micro Tasking and Earning Platform** is a full-stack MERN application that allows users to earn money by completing small tasks. The platform features role-based access for Workers, Buyers, and Admins to streamline task creation, management, and earnings. It ensures a seamless experience with responsive design, secure authentication, and role-based authorization.  
-
----
-
-## https://i.ibb.co.com/5WdhMdC8/micro-tasking1.jpg
-  
+The **JOYBOY** is a full-stack MERN application that allows users to earn money by completing small tasks. The platform features role-based access for Workers, Buyers, and Admins to streamline task creation, management, and earnings. It ensures a seamless experience with responsive design, secure authentication, and role-based authorization.  
 
 ---
 
@@ -90,12 +85,10 @@ The **Micro Tasking and Earning Platform** is a full-stack MERN application that
 ### Steps:  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/tushar54/microTask-client-side/edit/main
+   git clone https://github.com/darkrai06/joyboy-client.git
    cd your-repository
 2. For client
    -cd client
    -npm install
 
 4. Set up environment variables
-   
->>>>>>> 5506c20f66f04c81c889cdac4786d2b8da718176
