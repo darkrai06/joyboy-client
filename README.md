@@ -86,8 +86,7 @@ The **JOYBOY** is a full-stack MERN application that allows users to earn money 
    ```bash
    git clone https://github.com/darkrai06/joyboy-client.git
    cd your-repository
-2. For client
-   -cd client
+2. Install dependencies
    -npm install
 
 4. Set up environment variables
